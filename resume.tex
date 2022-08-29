@@ -1,0 +1,620 @@
+\documentclass{resume}
+
+%%%%%%%%%%%%%%%%
+%%% Packages %%%
+%%%%%%%%%%%%%%%%
+
+\usepackage{url}
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{lmodern}
+\usepackage{bold-extra}
+\usepackage{amssymb}
+
+%%%%%%%%%%%%%%%%
+%%% Commands %%%
+%%%%%%%%%%%%%%%%
+
+\renewcommand{\familydefault}{\rmdefault}
+\renewcommand{\categoryfont}{\sc}
+% \renewcommand{\titlenamefont}{\LARGE\sc\textbf{}}
+
+\renewcommand{\labelcitem}{$\diamond$}
+\renewcommand{\labelitemi}{\textbullet}
+\newcommand{\first}{$\mbox{1}^{\mbox{\scriptsize st}}$\ }
+\newcommand{\second}{$\mbox{2}^{\mbox{\scriptsize nd}}$\ }
+\newcommand{\third}{$\mbox{3}^{\mbox{\scriptsize rd}}$\ }
+\newcommand{\fourth}{$\mbox{4}^{\mbox{\scriptsize th}}$\ }
+\newcommand{\fifth}{$\mbox{5}^{\mbox{\scriptsize th}}$\ }
+\newcommand{\seventh}{$\mbox{7}^{\mbox{\scriptsize th}}$\ }
+\newcommand{\InternalSpace}{\vspace{0.18cm}}
+\newcommand{\ExternalSpace}{\vspace{-0.09cm}}
+
+\newcommand{\textapprox}{\raisebox{0.5ex}{\texttildelow}}
+
+% My Environments and Commands:
+
+\newenvironment{MySection}[1]
+{\begin{category}{#1}}
+{\end{category}}
+
+\newcommand{\MyItem}{\citembullet}
+
+% Template
+
+\setlength{\oddsidemargin}{1.75cm}
+\setlength{\marginparwidth}{3cm}\addtolength{\marginparwidth}{-\marginparsep}
+\setlength{\evensidemargin}{\oddsidemargin}
+\setlength{\textwidth}{\paperwidth}
+\addtolength{\textwidth}{-7.2cm}
+\addtolength{\textwidth}{-1.25\oddsidemargin}
+\addtolength{\textwidth}{\marginparwidth}
+\addtolength{\textwidth}{\marginparsep}
+\setlength{\topmargin}{-2.0cm}
+\addtolength{\textheight}{-1.5cm} % specifies bottom margin?
+
+
+% Months:
+\def \January   { Jan.  }
+\def \February  { Feb.  }
+\def \March     { Mar.  }
+\def \April     { Apr.  }
+\def \May       { May   }
+\def \June      { June  }
+\def \July      { July  }
+\def \August    { Aug.  }
+\def \September { Sept. }
+\def \October   { Oct.  }
+\def \November  { Nov.  }
+\def \December  { Dec.  }
+
+
+%%%%%%%%%%%%%%%
+%%% Defines %%%
+%%%%%%%%%%%%%%%
+
+\def \StudentName {Mehran Shakerinava}
+
+\def \CurrentDepartmentName    {School of Computer Science}
+\def \CurrentUniversityName    {McGill University}
+\def \CurrentUniversityAddress {3480 University St, Montréal, Québec}
+\def \CurrentPostalCode        {H3A 0E9}
+
+\def \FirstEmail  {mehran.shakerinava@mail.mcgill.ca}
+\def \SecondEmail {mehran.shakerinava@mila.quebec}
+
+\def \Homepage {https://mila.quebec/en/person/mehran-shakerinava/}
+
+\def \CellPhone {+1(438)881-3645}
+
+\def \YearOfBirth {1995}
+\def \MonthOfBirth {\November}
+\def \DayOfBirth {4}
+
+\def \ISCAXIX {\href{https://iscaconf.org/isca2019/}{ISCA 2019}}
+\def \HPCAXIX {\href{http://hpca2019.seas.gwu.edu/}{HPCA 2019}}
+\def \DPCIII  {\href{https://dpc3.compas.cs.stonybrook.edu/}{The Third Data Prefetching Championship (DPC3)}}
+
+\def \Lotfi {\href{https://scholar.google.com/citations?user=UZIKgasAAAAJ}{Pejman Lotfi-Kamran}}
+\def \Sarbazi {\href{https://scholar.google.com/citations?user=9OHC9AsAAAAJ}{Hamid Sarbazi-Azad}}
+\def \Soleymani {\href{https://scholar.google.com/citations?user=S1U0KlgAAAAJ}{Mahdieh Soleymani Baghshah}}
+\def \Siamak {\href{https://scholar.google.com/citations?user=VciG3C8AAAAJ}{Siamak Ravanbakhsh}}
+
+\InternalSpace
+\InternalSpace
+
+%%%%%%%%%%
+
+\centering\author{\StudentName}
+
+%%%%%%%%%%
+
+\address{
+\CurrentDepartmentName\\
+\CurrentUniversityName\\
+\CurrentUniversityAddress\\
+\CurrentPostalCode\\
+}
+{
+%Emails and Homepage:
+\texttt{\FirstEmail}\\
+\texttt{\SecondEmail}\\
+% \url{\Homepage}\\
+%Personal Information
+\texttt{\CellPhone}
+% Date of Birth: \MonthOfBirth\ \DayOfBirth, \YearOfBirth\\
+}
+
+
+\def\shr{\CurrentUniversityName}
+
+%%%%%%%%%%
+
+% \usepackage{geometry}
+% \geometry{a4paper, total={210mm, 297mm}, left=50mm, right=25mm, top=25mm, bottom=40mm}
+
+\begin{document}
+
+\maketitle
+
+\vspace{-0.75cm}
+
+\InternalSpace
+\InternalSpace
+
+
+%%%%%%%%%%%%%%%%%
+%%% Education %%%
+%%%%%%%%%%%%%%%%%
+
+\begin{MySection}{Education}
+
+\MyItem
+\textbf{Ph.D. in Computer Science} \hfill{ 2021 -- Now }\\
+School of Computer Science and \href{https://mila.quebec/en/}{Mila}\\
+McGill University, Montréal, Québec\\
+Supervised by \Siamak\\
+\textsc{GPA}: $4/4$
+
+\MyItem
+\textbf{M.Sc. in Computer Science} \hfill{ 2020 -- 2021 }\\
+School of Computer Science and \href{https://mila.quebec/en/}{Mila}\\
+McGill University, Montréal, Québec\\
+Supervised by \Siamak\\
+Fast-tracked to Ph.D.
+
+\MyItem
+\textbf{B.Sc. in Computer Engineering} \hfill{ 2014 -- 2019 }\\
+Department of Computer Engineering\\
+Sharif University of Technology, Tehran, Iran\\
+\textsc{GPA}: $17.41/20$ (150 credits)\\
+
+\end{MySection}
+
+\InternalSpace
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Research Interests %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{MySection}{Research Interests}
+
+% \MyItem \textbf{Computer Architecture}: \emph{Speculation, High-Performance Computing, Parallelism}
+
+% \MyItem Robot learning
+% \MyItem Deep reinforcement learning
+\MyItem Differentiable self-organizing systems
+\MyItem Symmetry and invariance in deep representation learning
+
+\end{MySection}
+
+\InternalSpace
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Research Experience %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \begin{MySection}{Research Experience}
+
+% \MyItem \textbf{\href{http://rl.cs.mcgill.ca/}{Reasoning and Learning Lab (RLLAB)}}\\
+% Graduate Research Assistant\\
+% Advisor: \Siamak
+
+% \begin{itemize}
+
+% \item \textbf{Learning on Spherical Data}:
+% I'm currently working on learning from data that lies on the surface of a sphere.
+% Examples of such data include Cosmological Microwave Background (CMB) maps, omni-directional images, and global climate records.
+% We model the sphere as a platonic solid with pixelized faces.
+% By combining the symmetry of the platonic solid with independendent translation symmetry of the face pixelization, we obtain a surrogate symmetry for the whole sphere.
+% We then design a linear layer that respects this symmetry and show that a deep neural network with this kind of layer is able to achive
+% state-of-the-art results on omni-directional image segmentation and segmentation of extreme climate events.
+
+% \item \textbf{Equivariant Compression}:
+% We are investigating layers that are able to reduce the dimension of data while exactly preserving
+% the inherent symmetries. Such layers may provide a mathematically principled approach to
+% disentangling factors of variation.
+
+
+% \end{itemize}
+
+% \InternalSpace\ExternalSpace
+
+% \MyItem \textbf{\href{http://mll.ce.sharif.edu}{Machine Learning Laboratory (MLL)}}\\
+% Undergraduate Research Assistant\\
+% Advisor: \Soleymani
+
+% \begin{itemize}
+
+% \item \textbf{Deep Reinforcement Learning}:
+% I Assisted a senior M.Sc. student in his thesis research.
+% I implemented several deep reinforcement learning agents and trained them to play Atari.
+% I also trained environment models using data gathered from trained agents.
+% We also performed many experiments on intrinsic motivation and exploration in deep reinforcement learning.
+
+% \item \textbf{Graph Representation Learning}:
+% We interpreted the commute distance of nodes in a graph as a measure of locality
+% and designed a convolutional layer that is local with respect to this measure.
+% We also theoretically proved that such a graph convolution layer is $\epsilon$-spectral.
+% To process signals on a given graph, first,
+% the commute distance is obtained in a preprocessing step via spectral graph embedding.
+% Then, we construct a convolutional neural network based on the obtained node embedding.
+% I implemented and evaluated this method on various datasets.
+
+% \end{itemize}
+
+% \InternalSpace\ExternalSpace
+
+% \MyItem \textbf{\href{http://hpcan.ce.sharif.edu}{High Performance Computing Architectures and Networks Laboratory (HPCAN)}}\\
+% %Sharif University of Technology, Tehran, Iran (Fall 2017 -- Present).\\
+% Undergraduate Research Assistant\\
+% Advisors: \Sarbazi\ and \Lotfi
+
+% \begin{itemize}
+
+% \item \textbf{Data Prefetching}: Memory access is the performance bottleneck in most modern computer systems, and therefore, reducing the number of cache misses is of paramount importance.
+% One widely used approach in this regard is data prefetching.
+% Data prefetching consists of predicting future memory requests and (pre-)fetching those memory blocks into the cache, before they are explicitly requested by the processor.
+% In this work, I implemented and helped develop several novel algorithms for data prefetching.
+% One of these prefetchers, named Bingo, is the current state-of-the-art for prefetching in multi-core systems.
+% Bingo was published in \textit{HPCA}, which is one of the most prestigious conferences in computer architecture.
+
+% \end{itemize}
+
+% \end{MySection}
+
+% \InternalSpace
+
+
+%%%%%%%%%%%%%%%%%%%%
+%%% Publications %%%
+%%%%%%%%%%%%%%%%%%%%
+
+\begin{MySection}{Publications}
+
+
+
+\MyItem \textbf{M.~Shakerinava}, and S.~Ravanbakhsh. {``Utility Theory for Sequential Decision Making.''} \textit{International Conference on Machine Learning (ICML)}. PMLR, 2022.
+
+\MyItem \textbf{M.~Shakerinava}, AK.~Mondal, and S.~Ravanbakhsh. {``Transformation Coding: Simple Objectives for Equivariant Representations."} \textit{arXiv preprint arXiv:2202.10930}, 2022.
+
+\MyItem \textbf{M.~Shakerinava}, and S.~Ravanbakhsh. {``Equivariant networks for pixelized spheres."} \textit{International Conference on Machine Learning (ICML)}. PMLR, 2021.
+
+\MyItem M.~Bakhshalipour, \textbf{M.~Shakerinava}, F.~Golshan, A.~Ansari, P.~Lotfi-Karman, and H.~Sarbazi-Azad, {``A Survey on Recent Hardware Data Prefetching Approaches with An Emphasis on Servers.''} \textit{arXiv preprint arXiv:2009.00715}, 2020.
+
+\MyItem F.~Golshan, M.~Bakhshalipour, \textbf{M.~Shakerinava}, A.~Ansari, P.~Lotfi-Kamran, and H.~Sarbazi-Azad, {``Harnessing Pairwise-Correlating Data Prefetching With Runahead Metadata.''} \textit{Computer Architecture Letters (CAL)}, 2020.
+
+\MyItem M.~Bakhshalipour, \textbf{M.~Shakerinava}, P.~Lotfi-Kamran, and H.~Sarbazi-Azad, {``Bingo Spatial Data Prefetcher.''} \textit{International Symposium on High-Performance Computer Architecture (HPCA)}, 2019.
+
+\end{MySection}
+
+\InternalSpace
+
+\begin{MySection}{Workshop Papers}
+
+\MyItem \textbf{M.~Shakerinava}, M.~Bakhshalipour, P.~Lotfi-Kamran, and H.~Sarbazi-Azad, {``Multi-Lookahead Offset Prefetching,''} in \textit{The Third Data Prefetching Championship (DPC3)}, in conjunction with \textit{International Symposium on Computer Architecture (ISCA)}, 2019.
+\MyItem M.~Bakhshalipour, \textbf{M.~Shakerinava}, P.~Lotfi-Kamran, and H.~Sarbazi-Azad, {``Accurately and Maximally Prefetching Spatial Data Access Patterns with Bingo,''} in \textit{The Third Data Prefetching Championship (DPC3)}, in conjunction with \textit{International Symposium on Computer Architecture (ISCA)}, 2019.
+
+\end{MySection}
+
+\InternalSpace
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%%% Honors & Awards %%%
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{MySection}{Honors and Awards}
+
+\MyItem
+Kharusi Family International Science Fellowship \hfill {2020}\\
+\emph{McGill University}\\
+Valued at 7500\$
+
+\MyItem
+\textbf{1st Place} (among \textapprox30,000 participants) \hfill {2019}\\
+\emph{Iran's National Master's Entrance Exam}\\
+Computer Engineering track, AI/Robotics major
+
+\MyItem
+\textbf{2nd and 3rd Place (1st and 2nd Place in Multi-Core Setting)} \hfill {2019}\\
+\emph{\DPCIII\ at \ISCAXIX}\\
+
+\MyItem
+\textbf{1st Place} \hfill {2016}\\
+Programming Contest at \href{http://www.pycon.ir}{Iran's 3rd Python Conference (\emph{PyCon 2016})}
+
+\MyItem
+\textbf{Silver Medal} (Ranked \textapprox15 among \textapprox10,000) \hfill {2012}\\
+21st \emph{Iranian National Olympiad in Informatics}
+
+\end{MySection}
+
+\InternalSpace
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Teaching Experience %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{MySection}{Teaching Experience}
+
+\MyItem \textbf{Teaching Assistant}\\
+\textit{Fall 2022 - Theory of Computation}\\
+McGill University, Montreal, Canada\\
+\InternalSpace\ExternalSpace
+Currently in progress.
+\InternalSpace\ExternalSpace
+
+\MyItem \textbf{Teaching Assistant}\\
+\textit{Winter 2022 - Probabilistic Graphical Models}\\
+McGill University, Montreal, Canada\\
+\InternalSpace\ExternalSpace
+Graded assignments and held office hours.
+% Answered newsgroup/email queries.
+\InternalSpace\ExternalSpace
+
+\MyItem \textbf{Teaching Assistant}\\
+\textit{Spring 2018 and Spring 2019 - Artificial Intelligence}\\
+Sharif University of Technology, Tehran, Iran\\
+\InternalSpace\ExternalSpace
+Designed and graded assignments.
+% , covering Reinforcement Learning, Bayesian Networks, Adversarial Search, and Machine Learning.
+% Designed programming assignments on Reinforcement Learning and Perceptrons.
+Held recitation classes for clarifying and solving assignments.
+% Answered newsgroup/email queries.
+\InternalSpace\ExternalSpace
+
+\MyItem \textbf{Teaching Assistant}\\
+\textit{Fall 2016 - Advanced Programming}\\
+Sharif University of Technology, Tehran, Iran\\
+\InternalSpace\ExternalSpace
+Held a recitation class.
+% on \href{https://en.wikipedia.org/wiki/Regular_expression}{Regular Expressions}.
+Designed and graded a quiz and a programming assignment.
+% Designed and graded a Quiz on Object-Oriented Programming and Regular Expressions. Designed a programming assignment.
+\InternalSpace\ExternalSpace
+
+\MyItem \textbf{Instructor} \hfill{}\\ 
+\textit{Informatics Olympiad (2012 -- 2015)}\\
+\href{https://en.wikipedia.org/wiki/National_Organization_for_Development_of_Exceptional_Talents}{NODET} High-School\\
+\InternalSpace\ExternalSpace
+Taught topics on Combinatorics, Graph Theory, Algorithms, and Programming.
+\InternalSpace\ExternalSpace
+
+\end{MySection}
+
+\InternalSpace
+
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%%% Work Experience %%%
+%%%%%%%%%%%%%%%%%%%%%%%
+
+% Do not include! Might cause VISA problems!
+
+% \begin{MySection}{Work Experience}
+
+% \MyItem \textbf{\href{http://lyan.co}{Lyan} (currently \href{https://shopgramapp.com}{Shopgram})}\\
+% Azadi Avenue, Tehran, Iran (2015 -- 2016).\\
+% Back-end web developer\\
+
+% \end{MySection}
+
+% \InternalSpace
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Selected Courses %%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \begin{MySection}{Selected Courses}
+
+% \MyItem \textbf{B.Sc., Sharif University of Technology}:
+
+% \begin{multicols}{2}
+
+% \begin{itemize}
+% \item {Deep Learning (18.6/20)}
+
+% \item {Linear Algebra (19.6/20)}
+
+% % \item {Electrical Circuits (19.2/20)}
+
+% \item {Automata and Compilers (20/20)}
+% % \item {Digital Systems Design (20/20)}
+
+% % \item {Computer Architecture (19.7/20)}
+% \item {Data Structures and Algorithms (20/20)}
+
+% \item {Advanced Programming (19.5/20)}
+% \item {Multivariate Calculus (20/20)}
+
+% % \item {Intro to Programming (20/20)}
+% \end{itemize}
+
+% \columnbreak
+
+% \begin{itemize}
+% \item {B.Sc. Thesis (20/20)}
+
+% \item {Foundations of Neuroscience (17.8/20)}
+% % \item {Advanced Logic Design (20/20)}
+% % \item {Computer Interface Circuits (19.9/20)}
+
+% % \item {VLSI Design (18.4/20)}
+% \item {Real-Time Systems (18.2/20)}
+% \item {Signals and Systems (19/20)}
+
+% \item {Artificial Intelligence (18.6/20)}
+% \item {Computer Networks (18.7/20)}
+% \end{itemize}
+
+% \end{multicols}
+
+% \end{MySection}
+
+% \InternalSpace
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Selected Projects %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \begin{MySection}{Selected Projects}
+
+% \MyItem \textbf{Deep Reinforcement Learning Assignments}\footnote{\href{https://github.com/mshakerinava/berkeleydeeprlcourse-solutions/}{https://github.com/mshakerinava/berkeleydeeprlcourse-solutions/}}\\
+% \InternalSpace\ExternalSpace
+% Solved the assignments for \href{http://rail.eecs.berkeley.edu/deeprlcourse/}{Berkeley's Deep RL course}. The solutions cover Imitation Learning, Policy Gradients, Q-Learning, Actor-Critic, Model-Based RL, and Exploration.
+% \InternalSpace\ExternalSpace
+
+% \MyItem \textbf{Variational Autoencoder Library}\footnote{\href{https://github.com/mshakerinava/vae-lib/}{https://github.com/mshakerinava/vae-lib/}}\\
+% \InternalSpace\ExternalSpace
+% Wrote a modular VAE library for visualization and drop-in use in Deep Learning projects.
+% \InternalSpace\ExternalSpace
+
+% \MyItem \textbf{CUDA K-Means}\\
+% \textit{Spring 2019 - Multi-Core Computing}\\
+% \InternalSpace\ExternalSpace
+% Implemented a highly efficient CUDA kernel for the k-means clustering algorithm.
+% \InternalSpace\ExternalSpace
+
+% \MyItem \textbf{Video Streaming WiFi Robot}\\
+% \textit{Spring 2018 - Hardware Lab}\\
+% \InternalSpace\ExternalSpace
+% Assembled and programmed a WiFi-controlled \href{https://www.arduino.cc/}{Arduino} robot with a camera. The video is streamed to a responsive web-based UI from which the robot can be remotely controlled.
+% \InternalSpace\ExternalSpace
+
+% % \MyItem \textbf{Network Protocols}\\
+% % \textit{Spring 2017 - Computer Networks Programming Assignments}\\
+% % \InternalSpace\ExternalSpace
+% % Implemented DHCP, TCP, and BGP in Java.
+% % \InternalSpace\ExternalSpace
+
+% % \MyItem \textbf{Local Search}\\
+% % \textit{Spring 2017 - Artificial Intelligence Programming Assignment}\\
+% % \InternalSpace\ExternalSpace
+% % Implemented Hill-climbing, Simulated Annealing, and Genetic Algorithm to solve a discrete optimization problem.
+% % \InternalSpace\ExternalSpace
+
+% \MyItem \textbf{Cython Compiler}\\
+% \textit{Fall 2016 - Automata and Compilers Project}\\
+% \InternalSpace\ExternalSpace
+% Wrote a compiler for a made-up programming language called Cython. The compiler used LALR(1) parsing and was written in C\texttt{++} with \href{https://github.com/westes/flex}{Flex}, \href{https://www.gnu.org/software/bison}{Bison}, and \href{https://llvm.org}{LLVM}.
+% \InternalSpace\ExternalSpace
+
+% \MyItem \textbf{FPGA Odometry}\\
+% \textit{Fall 2016 - Digital Systems Design Project}\\
+% \InternalSpace\ExternalSpace
+% Implemented \href{https://en.wikipedia.org/wiki/Odometry}{odometry} in C on Arduino and afterward, in Verilog on FPGA. Constructed a \href{https://en.wikipedia.org/wiki/Differential_wheeled_robot}{differential drive robot} with optical wheel encoders (consisting of encoder disks and photoelectric sensors), and tested the implementation on it successfully. \textit{(Best Class Project)}
+% \InternalSpace\ExternalSpace
+
+% \MyItem \textbf{Pipelined Processor}\\
+% \textit{Spring 2016 - Computer Architecture Bonus Project}\\
+% \InternalSpace\ExternalSpace
+% Verilog implementation of the 5-stage \href{https://en.wikipedia.org/wiki/Classic_RISC_pipeline}{classic RISC pipeline}.
+% \InternalSpace\ExternalSpace
+
+% % \MyItem \textbf{Pacman Game}\\
+% % \textit{Fall 2015 - Advanced Programming Final Project}\\
+% % \InternalSpace\ExternalSpace
+% % A clone of classic \href{https://en.wikipedia.org/wiki/Pac-Man}{Pacman} written in C\texttt{++} with \href{http://www.cocos2d-x.org/}{Cocos2d-x}.
+% % \InternalSpace\ExternalSpace
+
+% % \MyItem \textbf{15-Puzzle AI and GUI}\\
+% % \textit{Fall 2015 - Advanced Programming Midterm Project}\\
+% % \InternalSpace\ExternalSpace
+% % A GUI for a \href{https://en.wikipedia.org/wiki/15_puzzle}{15-Puzzle} game, and an AI that can solve it. Written in C\texttt{++} with \href{https://qt.io}{Qt}.
+% % \InternalSpace\ExternalSpace
+
+% \MyItem \textbf{Bare Metal Raspberry Pi Programming}\\
+% \textit{Fall 2015 - Computer Structure and Language Project}\\
+% \InternalSpace\ExternalSpace
+% Programmed a \href{https://raspberrypi.org}{Raspberry Pi} in ARM assembly to draw the Sierpinski triangle with a \href{https://en.wikipedia.org/wiki/Rule_90}{Rule 90} cellular automaton. \textit{(Best class project)}
+% \InternalSpace\ExternalSpace
+
+% % \MyItem \textbf{Flight Control Game}\\
+% % \textit{Fall 2014 - Intro to Programming Project}\\
+% % \InternalSpace\ExternalSpace
+% % A clone of \href{https://en.wikipedia.org/wiki/Flight_Control_(video_game)}{Flight Control} written in C with \href{https://gtk.org}{GTK}.
+% % \InternalSpace\ExternalSpace
+
+% \MyItem \textbf{2048 AI}\\
+% \textit{Fall 2014 - Intro to Programming Open-ended Homework Problem}\\
+% \InternalSpace\ExternalSpace
+% An AI for the game \href{http://gabrielecirulli.github.io/2048}{2048}, based on Monte-Carlo tree search and heuristics. It's able to reach 4096.
+% \InternalSpace\ExternalSpace
+
+% \end{MySection}
+
+% \InternalSpace
+
+
+%%%%%%%%%%%%%%%%%%%%%%
+%%% Voluntary Work %%%
+%%%%%%%%%%%%%%%%%%%%%%
+
+% \begin{MySection}{Voluntary Work}
+
+% \MyItem \textbf{8th and 9th \href{https://aichallenge.sharif.edu}{Sharif AI Challenge}}\\
+% Sharif University of Technology, Tehran, Iran (2016 and 2017)\\
+% Technical Staff (C\texttt{++} Client)\\
+
+% \end{MySection}
+
+% \InternalSpace
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Professional Service %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{MySection}{Professional Service}
+
+\MyItem \textbf{Reviewer} \\ NeurIPS 2022.
+
+\MyItem \textbf{Reviewer} \\ Montreal AI Symposium (MAIS) 2022.
+
+\end{MySection}
+
+\InternalSpace
+
+
+%%%%%%%%%%%%%%
+%%% Skills %%%
+%%%%%%%%%%%%%%
+
+% \begin{MySection}{Skills}
+
+% \MyItem 
+% Assembly, C/C\texttt{++}, Java, Python, MATLAB, PyTorch, TensorFlow, CUDA, Git, Verilog, Arduino, HTML, CSS, JavaScript, Bash, \LaTeX
+
+% \end{MySection}
+
+% \InternalSpace
+
+
+%%%%%%%%%%%%%%%%%
+%%% Languages %%%
+%%%%%%%%%%%%%%%%%
+
+% \begin{MySection}{Languages}
+
+% \MyItem Persian (Mother Tongue)
+% \MyItem English (Fluent)
+
+% \begin{itemize}
+
+% \item {TOEFL (Reading: 30, Listening: 30, Speaking: 27, Writing: 26)}
+% \item {GRE (Quantitative: 170, Verbal: 162, Writing: 3.5)}
+
+% \end{itemize}
+
+% \MyItem Swedish (Basic)
+
+% \end{MySection}
+
+
+\end{document}
